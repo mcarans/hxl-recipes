@@ -4,6 +4,10 @@
   "type": "cookbook",
   "columns": [
     "#affected",
+    "#inneed",
+    "#reached",
+    "#targeted",
+    "#population",    
     "#region",
     "#country",
     "#adm1",
@@ -16,7 +20,8 @@
       "type": "key figure",
       "ingredients": {
         "aggregateFunctions": [
-          "sum"
+          "sum",
+          "count"
         ],
         "filtersWith": [
           {
@@ -24,7 +29,11 @@
           }
         ],
         "valueColumns": [
-          "#affected"
+          "#affected",
+          "#inneed",
+          "#reached",
+          "#targeted",
+          "#population"          
         ]
       }
     }
