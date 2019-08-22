@@ -20,8 +20,7 @@
       "type": "key figure",
       "ingredients": {
         "aggregateFunctions": [
-          "sum",
-          "count"
+          "sum"
         ],
         "filtersWith": [
           {
@@ -43,8 +42,7 @@
       "type": "chart",
       "ingredients": {
         "aggregateFunctions": [
-          "sum",
-          "count"
+          "sum"
         ],
         "aggregateColumns": [
           "#region",
@@ -76,8 +74,7 @@
       "type": "chart",
       "ingredients": {
         "aggregateFunctions": [
-          "sum",
-          "count"
+          "sum"
         ],
         "aggregateColumns": [
           "#date",
