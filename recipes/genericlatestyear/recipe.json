@@ -36,7 +36,7 @@
           "#population"          
         ]
       }
-    },
+    },    
     {
       "name": "Charts: Sum items for a tag grouped by administrative units",
       "description": "",
@@ -56,6 +56,24 @@
           "#reached",
           "#targeted",
           "#population"          
+        ]
+      }
+    },
+    {
+      "name": "Charts: Sum/count items for a value column grouped by aggregate columns for latest year",
+      "description": "",
+      "type": "chart",
+      "ingredients": {
+        "aggregateFunctions": [
+          "sum"
+        ],
+        "aggregateColumns": [
+          "#region",
+          "#country",
+          "#adm1",
+        ],
+        "valueColumns": [
+          "#affected"
         ]
       }
     }    
