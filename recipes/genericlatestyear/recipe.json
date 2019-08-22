@@ -65,13 +65,18 @@
       "type": "chart",
       "ingredients": {
         "aggregateFunctions": [
-          "sum"
+          "sum",
+          "count"
         ],
         "aggregateColumns": [
           "#adm1"
         ],
         "valueColumns": [
-          "#affected"
+          "#affected",
+          "#inneed",
+          "#reached",
+          "#targeted",
+          "#population"          
         ]
       }
     }    
