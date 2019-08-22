@@ -75,6 +75,11 @@
             "#date+year": "$MAX$"
           }
         ],
+        "filtersWithout": [
+          {
+            "#adm1": ""
+          }
+        ],        
         "valueColumns": [
           "#affected",
           "#inneed",
