@@ -68,6 +68,7 @@
           "count"
         ],
         "aggregateColumns": [
+          "#region",
           "#country",
           "#adm1"
         ],
