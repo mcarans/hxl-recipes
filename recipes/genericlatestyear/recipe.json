@@ -38,7 +38,7 @@
       }
     },    
     {
-      "name": "Charts: Sum items for a tag grouped by administrative units",
+      "name": "Charts: Sum/count items for a value column for each year",
       "description": "",
       "type": "chart",
       "ingredients": {
@@ -47,8 +47,7 @@
           "count"
         ],
         "aggregateColumns": [
-          "#date",
-          "#country"
+          "#date+year"
         ],
         "valueColumns": [
           "#affected",
@@ -60,7 +59,7 @@
       }
     },
     {
-      "name": "Charts: Sum/count items for a value column grouped by aggregate columns for latest year",
+      "name": "Charts: Sum/count items for a value column grouped by adm1 for latest year",
       "description": "",
       "type": "chart",
       "ingredients": {
@@ -70,6 +69,16 @@
         ],
         "aggregateColumns": [
           "#adm1"
+        ],
+        "filtersWith": [
+          {
+            "#date+year": "$MAX$"
+          }
+        ],
+        "filtersWithout": [
+          {
+            "#adm1": ""
+          },
         ],
         "valueColumns": [
           "#affected",
