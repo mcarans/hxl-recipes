@@ -4,10 +4,6 @@
   "type": "cookbook",
   "columns": [
     "#affected",
-    "#inneed",
-    "#reached",
-    "#targeted",
-    "#population",
     "#region",
     "#country",
     "#adm1",
@@ -28,11 +24,7 @@
           }
         ],
         "valueColumns": [
-          "#affected",
-          "#inneed",
-          "#reached",
-          "#targeted",
-          "#population"
+          "#affected"
         ]
       }
     },
@@ -60,11 +52,7 @@
           },
         ],
         "valueColumns": [
-          "#affected",
-          "#inneed",
-          "#reached",
-          "#targeted",
-          "#population"
+          "#affected"
         ]
       }
     },
@@ -81,11 +69,7 @@
           "#country"
         ],
         "valueColumns": [
-          "#affected",
-          "#inneed",
-          "#reached",
-          "#targeted",
-          "#population"
+          "#affected"
         ]
       }
     }
