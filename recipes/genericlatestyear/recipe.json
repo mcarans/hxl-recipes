@@ -43,14 +43,19 @@
       "type": "chart",
       "ingredients": {
         "aggregateFunctions": [
-          "sum"
+          "sum",
+          "count"
         ],
         "aggregateColumns": [
           "#date",
           "#country"
         ],
         "valueColumns": [
-          "#affected"
+          "#affected",
+          "#inneed",
+          "#reached",
+          "#targeted",
+          "#population"          
         ]
       }
     }    
