@@ -8,7 +8,6 @@
     "#reached",
     "#targeted",
     "#population",    
-    "#region",
     "#country",
     "#adm1",
     "#date+year"
@@ -68,7 +67,6 @@
           "sum"
         ],
         "aggregateColumns": [
-          "#region",
           "#country",
           "#adm1",
         ],
