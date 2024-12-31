@@ -1,0 +1,78 @@
+{
+  "name": "WFP Hungermap",
+  "title": "WFP Hungermap",
+  "type": "cookbook",
+  "columns": [
+    "#meta+adminlevel",
+    "#date",
+    "#indicator+fcs+prevalence",
+    "#indicator+rcsi+prevalence",
+    "#indicator+market_access+prevalence"
+  ],
+  "noCachedMetarows": true,
+  "recipes": [
+    {
+      "name": "Food Consumption Score (FCS)",
+      "title": "Food Consumption Score (FCS)",
+      "type": "timeseries",
+      "ingredients": {
+        "aggregateFunctions": [
+          "sum"
+        ],
+        "filtersWith": [
+          {
+            "#meta+adminlevel": "national"
+          }
+        ],
+        "aggregateColumns": [
+          "#date"
+        ],
+        "valueColumns": [
+          "#indicator+fcs+prevalence"
+        ]
+      }
+    },
+    {
+      "name": "Reduced Coping Strategies Index (rCSI)",
+      "title": "Reduced Coping Strategies Index (rCSI)",
+      "type": "timeseries",
+      "ingredients": {
+        "aggregateFunctions": [
+          "sum"
+        ],
+        "filtersWith": [
+          {
+            "#meta+adminlevel": "national"
+          }
+        ],
+        "aggregateColumns": [
+          "#date"
+        ],
+        "valueColumns": [
+          "#indicator+rcsi+prevalence"
+        ]
+      }
+    },
+    {
+      "name": "Market Access",
+      "title": "Market Access",
+      "type": "timeseries",
+      "ingredients": {
+        "aggregateFunctions": [
+          "sum"
+        ],
+        "filtersWith": [
+          {
+            "#meta+adminlevel": "national"
+          }
+        ],
+        "aggregateColumns": [
+          "#date"
+        ],
+        "valueColumns": [
+          "#indicator+market_access+prevalence"
+        ]
+      }
+    }
+  ]
+}
